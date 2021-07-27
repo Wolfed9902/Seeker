@@ -1,9 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
+app.static_folder = 'static'
 
 @app.route("/")
-def hello_world():
+def homepage():
     return render_template('home.html')
 
 if __name__ == '__main__':
