@@ -1,11 +1,16 @@
-
 body {
 	overflow-x:hidden;
 	overflow-y:hidden;
 }
 
-.title-primary {
+.home-title {
   margin: auto;
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
+	border-style: solid;
+}
+
+.home-content {
+	padding: 2rem;
+	border-style: dashed;
 }
