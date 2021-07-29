@@ -1,16 +1,32 @@
 body {
-	overflow-x:hidden;
-	overflow-y:hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .home-title {
   margin: auto;
   width: 100%;
-  padding: 2rem;
-	border-style: solid;
+  padding: 32px;
+}
+
+.title-text {
+	animation: rise 2s infinite ease-in-out;
+	display: inline-block;
 }
 
 .home-content {
-	padding: 2rem;
-	border-style: dashed;
+	display: flex;
+	justify-content: space-between;
+	padding: 32px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: 1px;
+	margin-right: 1px;
+	border: solid 2px #bfbfbf;
+}
+
+@keyframes rise {
+  50% {
+    transform: translate(0, -15%);
+  }
 }
