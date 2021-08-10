@@ -15,6 +15,10 @@ def signin():
 def listingspage():
     return render_template('listings.html')
 
+@app.route("/newlisting")
+def newlisting():
+    return render_template('newlisting.html')
+
 @app.route("/history")
 def history():
     return render_template('history.html')
