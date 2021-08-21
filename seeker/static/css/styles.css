@@ -25,6 +25,18 @@ body {
 	border: solid 2px #bfbfbf;
 }
 
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #171a1c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
 @keyframes rise {
   50% {
     transform: translate(0, -15%);
